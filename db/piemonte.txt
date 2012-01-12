@@ -1,0 +1,8 @@
+Cuneo|Alba|Asterx|http://www.asterx.it/|info@asterx.it|VoIP
+Novara|Novara|OS3|http://www.os3.it/||Sviluppo,Formazione
+Torino|Torino|Redomino|http://redomino.com/||Web
+Torino|Torino|BWLab|http://www.bwlab.it/|info@bwlab.it|Web 
+Torino|Torino|PowerVoip|http://www.powervoip.it/||VoIP
+Torino|Torino|NextStep|http://www.nextstep-tlc.com/|segreteria@nextstep-tlc.com|Networking
+Torino|Moncalieri|Linuz|http://www.studiojnj.it/linuz/|info@linuz.it|Networking
+

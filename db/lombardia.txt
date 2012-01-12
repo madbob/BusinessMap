@@ -1,0 +1,13 @@
+Bergamo|Dalmine|SMCP Techology|http://www.smcpsoftware.eu/|info@smcp.it|Web,Consulenza,Networking,Sviluppo
+Brescia|Castegnato|AtWork|http://www.atworkonline.it/|info@atworkonline.it|Sviluppo,Migrazione
+Brescia|Travagliato|EasyTalk|http://www.easytalk.it/|info@easytalk.it|VoIP
+Cremona|Cremona|DigiColor|http://www.digicolor.net/|info@digicolor.net|Web
+Milano|Milano|Bee-Side|http://www.bee-side.com/||Web
+Milano|Milano|CBS|http://www.cecchi.biz/||Assistenza,Migrazione
+Milano|Rho|MMUL|http://www.mmul.it/|info@mmul.it|Networking,Formazione
+Milano|Rho|Voice@Work|http://www.voiceatwork.com/||VoIP
+Milano|Pero|PuntoContatto|http://www.puntocontatto.it/|info@puntocontatto.it|VoIP
+Pavia|Pavia|Apsis|http://www.apsis.it/|info@apsis.it|Migrazione,Networking
+Pavia|Vigevano|MarcoSimioni|http://www.marcosimioni.com/|ms@marcosimioni.com|Embedded
+Varese|Buguggiate|Link It|http://linkgroup.it/|info@linkgroup.it|Sviluppo
+

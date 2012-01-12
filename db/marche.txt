@@ -1,0 +1,4 @@
+Ancona|Jesi|SnB|http://www.snb.it/|info@snb.it|Web,Sviluppo,Formazione
+Ancona|Ancona|Netzen|http://netzen.it/|info@netzen.it|Networking,Sviluppo,Embedded
+Pesaro-Urbino|Fano|Iubar|http://www.iubar.it/||Sviluppo
+

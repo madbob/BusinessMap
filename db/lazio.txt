@@ -1,0 +1,9 @@
+Roma|Pomezia|Babel|http://www.babel.it/||Sviluppo,Migrazione
+Roma|Roma|B-Open|http://www.bopen.it/||Sviluppo,Networking
+Roma|Roma|MikeOverIp|http://mikeoverip.wordpress.com/about-it/|mikeoverip@gmail.com|VoIP,Sviluppo
+Roma|Roma|PaoloLulli|http://www.lulli.net/paolo/|paolo@lulli.net|Sviluppo
+Roma|Roma|Lbyte|http://asterisk.blogsite.org/|lbyte@libero.it|VoIP,Web,Consulenza
+Roma|Roma|Easypbx|http://www.easypbx.it/|info@easypbx.it|VoIP
+Roma|Roma|PlugAndVoip|http://www.plugandvoip.it/|info@plugandvoip.it|VoIP
+Roma|Roma|Eraclito|http://www.eraclito.it/|info@eraclito.it|Formazione
+

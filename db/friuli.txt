@@ -1,0 +1,3 @@
+Trieste|Trieste|Voiper|http://www.voiper.it/|info@spherait.it|VoIP
+Udine|Lignano Sabbiadoro|AngeloPellegrinon|http://www.angelopellegrinon.it/|info@angelopellegrinon.it|VoIP,Web,Networking
+

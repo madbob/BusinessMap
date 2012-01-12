@@ -1,0 +1,4 @@
+Arezzo|Arezzo|Antica Bottega Digitale|http://portal.abd.it/||Consulenza
+Firenze|Firenze|Truelite|http://www.truelite.it/|info@truelite.it|Networking,Formazione,Sviluppo
+Prato|Prato|CBS|http://www.cecchi.biz/||Networking
+
