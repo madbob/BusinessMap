@@ -67,7 +67,7 @@ echo "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://
 				$select = 2;
 				break;
 
-			case 'Partecipa alla BusinessMap':
+			case "Cos'è BusinessMap":
 				$select = 3;
 				break;
 
@@ -98,7 +98,7 @@ echo "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://
 			<li class="verticalslider_subtabs"><a class="select" href="http://<?php echo $_SERVER['HTTP_HOST'] ?>"><?php echo $menu ?></a>
 			<?php endif; ?>
 
-			<li><a<?php if ($select == 3) echo ' class="select"' ?> href="<?php echo $main_url ?>/partecipa.php">Partecipa</a></li>
+			<li><a<?php if ($select == 3) echo ' class="select"' ?> href="<?php echo $main_url ?>/faq.php">Info</a></li>
 
 			<li>
 				<p class="intro">

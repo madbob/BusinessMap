@@ -6,4 +6,4 @@ Roma|Roma|Lbyte|http://asterisk.blogsite.org/|lbyte@libero.it|VoIP,Web,Consulenz
 Roma|Roma|Easypbx|http://www.easypbx.it/|info@easypbx.it|VoIP
 Roma|Roma|PlugAndVoip|http://www.plugandvoip.it/|info@plugandvoip.it|VoIP
 Roma|Roma|Eraclito|http://www.eraclito.it/|info@eraclito.it|Formazione
-
+Roma|Roma|New Genesys|http://www.newgenesys.it/|info@newgenesys.it|Sviluppo
