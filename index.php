@@ -51,7 +51,21 @@ if ($transformed == false) {
 
 ?>
 
-<input type="hidden" name="coords_file" value="dati.txt" />
+<input type="hidden" name="networking_coords_file" value="dati_networking.txt" />
+<input type="hidden" name="sviluppo_coords_file" value="dati_sviluppo.txt" />
+<input type="hidden" name="web_coords_file" value="dati_web.txt" />
+<input type="hidden" name="formazione_coords_file" value="dati_formazione.txt" />
+<input type="hidden" name="consulenza_coords_file" value="dati_consulenza.txt" />
+
 <div id="map" class="smallmap"></div>
+
+<div class="filters">
+	<input type="radio" name="type" value="networking"> Networking<br />
+	<input type="radio" name="type" value="sviluppo"> Sviluppo Software<br />
+	<input type="radio" name="type" value="web"> Web<br />
+	<input type="radio" name="type" value="formazione"> Formazione<br />
+	<input type="radio" name="type" value="consulenza"> Consulenza<br />
+	<input type="radio" name="type" value="tutti" checked="checked"> Tutti
+</div>
 
 <?php do_foot (); ?>

@@ -51,6 +51,16 @@ img {
 	text-align: center;
 }
 
+.filters {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	z-index: 1000;
+	width: 200px;
+	background-color: #FFF;
+	padding: 20px;
+}
+
 .center_frame {
 	display: table;
 	overflow: hidden;

@@ -2,7 +2,7 @@
 	Buona parte del codice qui presente e' stato copiato da linuxday.it
 */
 
-var map, layer;
+var map;
 
 OpenLayers.Feature.prototype.createPopup = function (closeBox) {
 	if (this.lonlat != null) {
@@ -66,9 +66,14 @@ function init () {
 	map.addControl(new OpenLayers.Control.Permalink());
 	map.addControl(new OpenLayers.Control.ScaleLine());
 
-	var f = $('input[name=coords_file]').val ();
-	var newl = new OpenLayers.Layer.Text( "LUG", {location: f} );
-	map.addLayer(newl);
+	layers = [ 'networking', 'sviluppo', 'web', 'formazione', 'consulenza' ];
+
+	for (i = 0; i < layers.length; i++) {
+		n = layers [i];
+		var f = $('input[type=hidden][name=' + n + 'coords_file]').val ();
+		var newl = new OpenLayers.Layer.Text( n, {location: f} );
+		map.addLayer(newl);
+	}
 
 	zoom = $('input[name=default_zoom]').val ();;
 
@@ -112,6 +117,29 @@ function init () {
 			}
 		);
 	}
+
+	$('.filters input[type=radio]').click (function () {
+		if ($(this).val () == 'tutti') {
+			for (i = 0; i < map.layers.length; i++) {
+				l = map.layers [i];
+				l.setVisibility (true);
+			}
+		}
+		else {
+			/*
+				Parto da 1 perche' il layer 0 e' quello con la
+				mappa vera e propria disegnata
+			*/
+			for (i = 1; i < map.layers.length; i++) {
+				l = map.layers [i];
+
+				if (l.name != $(this).val ())
+					l.setVisibility (false);
+				else
+					l.setVisibility (true);
+			}
+		}
+	});
 }
 
 $(document).ready(function(){
