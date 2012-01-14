@@ -70,7 +70,7 @@ function init () {
 
 	for (i = 0; i < layers.length; i++) {
 		n = layers [i];
-		var f = $('input[type=hidden][name=' + n + 'coords_file]').val ();
+		var f = $('input[type=hidden][name=' + n + '_coords_file]').val ();
 		var newl = new OpenLayers.Layer.Text( n, {location: f} );
 		map.addLayer(newl);
 	}
