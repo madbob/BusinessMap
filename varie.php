@@ -23,8 +23,7 @@ $elenco_regioni = array (
 	"trentino"   => "Trentino Alto Adige",
 	"umbria"     => "Umbria",
 	"valle"      => "Valle d'Aosta",
-	"veneto"     => "Veneto",
-	"Italia"     => "Italia"
+	"veneto"     => "Veneto"
 );
 
 # URL del sito di riferimento

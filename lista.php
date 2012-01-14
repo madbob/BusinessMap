@@ -11,7 +11,7 @@ do_head ('Lista completa delle aziende', array ('js/jquery.dataTables.min.js', '
 	$db_regione = array ();
 
 	foreach ($elenco_regioni as $shortfile => $name) {
-		$file = file ("./db/${shortfile}.txt");
+		$file = file ("./db/${shortfile}.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 
 		foreach ($file as &$row)
 			$row = "$shortfile|$name|$row";
@@ -40,6 +40,7 @@ do_head ('Lista completa delle aziende', array ('js/jquery.dataTables.min.js', '
 				<th>Provincia</th>
 				<th>Città</th>
 				<th>Denominazione</th>
+				<th>Keywords</th>
 			</tr>
 		</thead>
 
@@ -49,6 +50,7 @@ do_head ('Lista completa delle aziende', array ('js/jquery.dataTables.min.js', '
 				<th>Provincia</th>
 				<th>Città</th>
 				<th>Denominazione</th>
+				<th>Keywords</th>
 			</tr>
 		</tfoot>
 
@@ -66,6 +68,7 @@ do_head ('Lista completa delle aziende', array ('js/jquery.dataTables.min.js', '
 					<td class="province"><?php echo $province ?></td>
 					<td class="zone"><?php echo $city ?></td>
 					<td class="contactUrl"><a href="<?php echo $web?>"><?php echo $denominazione ?></a></td>
+					<td class="category"><?php echo join (', ', explode (',', $category)) ?></td>
 				</tr>
 			<?php endforeach; ?>
 		</tbody>

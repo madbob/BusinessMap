@@ -34,6 +34,7 @@ do_head ($title);
 				<th>Provincia</th>
 				<th>Denominazione</th>
 				<th>Sito</th>
+				<th>Keywords</th>
 			</tr>
 		</thead>
 		<tfoot>
@@ -41,22 +42,21 @@ do_head ($title);
 				<th>Provincia</th>
 				<th>Denominazione</th>
 				<th>Sito</th>
+				<th>Keywords</th>
 			</tr>
 		</tfoot>
 		<tbody>
 			<?php
 
 			while (list ($nriga, $linea) = each ($db_regione)):
-				$campi = explode("|",$linea);
-				$provincia     = $campi[0];
-				$denominazione = $campi[1];
-				$contatti      = $campi[3];
+				list ($province, $city, $denominazione, $web, $mail, $catogory) = explode ("|", $linea);
 
 				?>
 				<tr class="row_<?php echo ($nriga % 2); ?>">
-					<td class="province"><?php echo $provincia ?></td>
+					<td class="province"><?php echo $province ?></td>
 					<td><?php echo $denominazione ?></td>
-					<td class="contactUrl"><a href="<?php echo $contatti?>"><?php echo $contatti ?></a></td>
+					<td class="contactUrl"><a href="<?php echo $web?>"><?php echo $web ?></a></td>
+					<td class="category"><?php echo join (', ', explode (',', $category)) ?></td>
 				</tr>
 
 			<?php endwhile;?>
