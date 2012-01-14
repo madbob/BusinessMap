@@ -58,14 +58,14 @@ do_head ('Lista completa delle aziende', array ('js/jquery.dataTables.min.js', '
 			$regione_riferimento = "";
 
 			foreach ($db_regione as $linea):
-				list ($shortregion, $regione, $provincia, $denominazione, $zona, $contatti, $mail) = explode("|",$linea);
+				list ($shortregion, $regione, $province, $city, $denominazione, $web, $mail, $catogory) = explode("|",$linea);
 				?>
 
 				<tr>
 					<td class="region"><a href="http://<?php echo $shortregion ?>.businessmap.it/"><?php echo $regione ?></a></td>
-					<td class="province"><?php echo $provincia ?></td>
-					<td class="zone"><a href="http://businessmap.it/?zoom=<?php echo $denominazione ?>"><?php echo $zona ?></a></td>
-					<td class="contactUrl"><a href="<?php echo $contatti?>"><?php echo $denominazione ?></a></td>
+					<td class="province"><?php echo $province ?></td>
+					<td class="zone"><?php echo $city ?></td>
+					<td class="contactUrl"><a href="<?php echo $web?>"><?php echo $denominazione ?></a></td>
 				</tr>
 			<?php endforeach; ?>
 		</tbody>
