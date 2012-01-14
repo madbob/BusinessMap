@@ -1,8 +1,8 @@
 Padova|Padova|DedaSys|http://www.dedasys.com/|davidw@dedasys.com|Sviluppo
 Padova|Padova|Beppo|http://www.beppo.it/|direzione@beppo.it|Web,VoIP
-Padova|Peraga|bEffect|http://www.beffect.net/|info@beffect|VoIP,Web,Networking
+Padova|Vigonza|bEffect|http://www.beffect.net/|info@beffect|VoIP,Web,Networking
 Treviso|Farra di Soligo|Creasol|http://www.creasol.it/|tech@creasol.it|VoIP,Consulenza
-Venezia|San Dona' di Piave|Dacos|http://www.dacos.net/|tech@dacos.net|Consulenza
+Venezia|San Donà di Piave|Dacos|http://www.dacos.net/|tech@dacos.net|Consulenza
 Verona|Verona|Alba|http://www.alba.st/|info@alba.st|Networking
 Verona|Villafranca di Verona|Kleis|http://www.kleis.it/|info@kleis.it|VoIP
 Verona|Grezzana|Netspin|http://www.netspin.it/||Networking,Web
