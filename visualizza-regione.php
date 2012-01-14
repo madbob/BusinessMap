@@ -14,7 +14,7 @@ else {
 if (array_key_exists ($regione_richiesta, $elenco_regioni)) {
 	$regione = $elenco_regioni[$regione_richiesta];
 	$db_file = "$regione_richiesta.txt";
-	$db_regione = file ("./db/$db_file");
+	$db_regione = file ("./db/$db_file", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 	$title = 'Tutte le aziende opensource nella regione ' . $regione;
 }
 else {
@@ -49,7 +49,7 @@ do_head ($title);
 			<?php
 
 			while (list ($nriga, $linea) = each ($db_regione)):
-				list ($province, $city, $denominazione, $web, $mail, $catogory) = explode ("|", $linea);
+				list ($province, $city, $denominazione, $web, $mail, $category) = explode ("|", $linea);
 
 				?>
 				<tr class="row_<?php echo ($nriga % 2); ?>">

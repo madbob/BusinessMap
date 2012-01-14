@@ -60,7 +60,7 @@ do_head ('Lista completa delle aziende', array ('js/jquery.dataTables.min.js', '
 			$regione_riferimento = "";
 
 			foreach ($db_regione as $linea):
-				list ($shortregion, $regione, $province, $city, $denominazione, $web, $mail, $catogory) = explode("|",$linea);
+				list ($shortregion, $regione, $province, $city, $denominazione, $web, $mail, $category) = explode("|",$linea);
 				?>
 
 				<tr>
