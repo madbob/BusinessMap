@@ -123,23 +123,15 @@ function do_foot () {
 
 		<!-- Piwik -->
 		<script type="text/javascript">
-			var pkBaseURL = (("https:" == document.location.protocol) ?
-				"https://pergamena.lugbs.linux.it/" :
-				"http://pergamena.lugbs.linux.it/");
-			document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
-		</script>
-		<script type="text/javascript">
-			try {
-				var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 4);
-				piwikTracker.trackPageView();
-				piwikTracker.enableLinkTracking();
-			} catch( err ) {}
-		</script>
-		<noscript>
-			<p>
-				<img src="http://pergamena.lugbs.linux.it/piwik.php?idsite=3" style="border:0" alt="" />
-			</p>
-		</noscript>
+		var pkBaseURL = (("https:" == document.location.protocol) ? "https://pergamena.lugbs.linux.it/" : "http://pergamena.lugbs.linux.it/");
+		document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+		</script><script type="text/javascript">
+		try {
+		var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 4);
+		piwikTracker.trackPageView();
+		piwikTracker.enableLinkTracking();
+		} catch( err ) {}
+		</script><noscript><p><img src="http://pergamena.lugbs.linux.it/piwik.php?idsite=4" style="border:0" alt="" /></p></noscript>
 		<!-- End Piwik Tracking Code -->
 	</body>
 </html>
