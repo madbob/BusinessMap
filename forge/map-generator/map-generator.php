@@ -41,10 +41,12 @@ foreach ($elenco_regioni as $region => $name) {
 			switch ($c) {
 				case 'Networking':
 				case 'VoIP':
+				case 'Sicurezza':
 					$targets [] = 'networking';
 					break;
 
 				case 'Sviluppo':
+				case 'Embedded':
 					$targets [] = 'sviluppo';
 					break;
 
