@@ -57,7 +57,12 @@ foreach ($elenco_regioni as $region => $name) {
 					break;
 
 				case 'Consulenza':
+				case 'Migrazione':
 					$targets [] = 'consulenza';
+					break;
+
+				default:
+					echo "Categoria non correttamente gestita: $c\n";
 					break;
 			}
 		}

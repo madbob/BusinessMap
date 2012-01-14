@@ -3,7 +3,7 @@ Brescia|Castegnato|AtWork|http://www.atworkonline.it/|info@atworkonline.it|Svilu
 Brescia|Travagliato|EasyTalk|http://www.easytalk.it/|info@easytalk.it|VoIP
 Cremona|Cremona|DigiColor|http://www.digicolor.net/|info@digicolor.net|Web
 Milano|Milano|Bee-Side|http://www.bee-side.com/||Web
-Milano|Milano|CBS|http://www.cecchi.biz/||Assistenza,Migrazione
+Milano|Milano|CBS|http://www.cecchi.biz/||Migrazione
 Milano|Rho|MMUL|http://www.mmul.it/|info@mmul.it|Networking,Formazione
 Milano|Rho|Voice@Work|http://www.voiceatwork.com/||VoIP
 Milano|Pero|PuntoContatto|http://www.puntocontatto.it/|info@puntocontatto.it|VoIP
