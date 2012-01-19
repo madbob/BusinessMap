@@ -1,5 +1,5 @@
 Ancona|Jesi|SnB|http://www.snb.it/|info@snb.it|Web,Sviluppo,Formazione
 Ancona|Ancona|Netzen|http://netzen.it/|info@netzen.it|Networking,Sviluppo,Embedded
 Pesaro-Urbino|Fano|Iubar|http://www.iubar.it/||Sviluppo
-Pesaro-Urbino|Fano|yTech|http://www.yteck.it/|info@yteck.it|Web
+Pesaro-Urbino|Fano|yTeck|http://www.yteck.it/|info@yteck.it|Web
 
