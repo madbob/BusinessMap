@@ -42,6 +42,7 @@ foreach ($elenco_regioni as $region => $name) {
 				case 'Networking':
 				case 'VoIP':
 				case 'Sicurezza':
+				case 'Groupware':
 					$targets [] = 'networking';
 					break;
 
