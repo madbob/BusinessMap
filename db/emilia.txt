@@ -3,6 +3,7 @@ Bologna|Imola|Incipit|http://www.incipit.biz/|info@incipit.biz|Web,Networking
 Bologna|Bologna|QCall|http://www.qcall.it/||VoIP
 Modena|Modena|Klarya|http://www.klarya.it/|info@klarya.it|VoIP
 Reggio Emilia|Reggio Emilia|Omnis System|http://www.omnis-systems.com/|support@omnis-systems.com|Networking,Groupware
+Reggio Emilia|Correggio|Web-LAN|http://www.web-lan.it/|tecnico@web-lan.it|Networking,Formazione,Web
 Reggio Emilia|Scandiano|Garp|http://www.garp.it/|info@garp.it|Consulenza,VoIP,Web
 Rimini|Rimini|Xsep|http://www.xsep.net/|info@xsep.net|VoIP,Consulenza,Networking
 
