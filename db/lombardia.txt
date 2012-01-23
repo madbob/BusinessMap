@@ -1,4 +1,5 @@
 Bergamo|Dalmine|SMCP Techology|http://www.smcpsoftware.eu/|info@smcp.it|Web,Consulenza,Networking,Sviluppo
+Bergamo|Rogno|Nixo|http://www.nixo.it/||Networking
 Brescia|Castegnato|AtWork|http://www.atworkonline.it/|info@atworkonline.it|Sviluppo,Migrazione
 Brescia|Travagliato|EasyTalk|http://www.easytalk.it/|info@easytalk.it|VoIP
 Cremona|Cremona|DigiColor|http://www.digicolor.net/|info@digicolor.net|Web
