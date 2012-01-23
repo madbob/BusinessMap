@@ -22,7 +22,7 @@ do_head ("Cos'è BusinessMap");
 		<p>
 			Chi invece cerca supporto domestico, o più semplicemente
 			altri utenti linuxari con cui scambiare opinioni ed
-			idee, può fare riferimento a <a href="">LugMap.it</a>
+			idee, può fare riferimento a <a href="http://lugmap.it/">LugMap.it</a>
 		</p>
 
 		<h3>I dati sono accessibili in formato raw?</h3>
