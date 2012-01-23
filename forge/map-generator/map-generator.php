@@ -72,7 +72,7 @@ foreach ($elenco_regioni as $region => $name) {
 
 		foreach ($cities as $c) {
 			if ($city == $c) {
-				$c = str_replace (' ', '%20', $city);
+				$c = str_replace (' ', '%20', $city) . ',' . str_replace (' ', '%20', $prov);
 
 				$result = ask_coordinates ($c);
 				if ($result == null)
