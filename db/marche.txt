@@ -1,5 +1,5 @@
 Ancona|Jesi|SnB|http://www.snb.it/|info@snb.it|Web,Sviluppo,Formazione
 Ancona|Ancona|Netzen|http://netzen.it/|info@netzen.it|Networking,Sviluppo,Embedded
+Ascoli Piceno|Ascoli Piceno|Kairos Media|http://www.kairosmedia.it/||Sviluppo,Networking
 Pesaro-Urbino|Fano|Iubar|http://www.iubar.it/||Sviluppo
 Pesaro-Urbino|Fano|yTeck|http://www.yteck.it/|info@yteck.it|Web
-
