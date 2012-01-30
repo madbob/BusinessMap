@@ -4,6 +4,7 @@ Brescia|Castegnato|AtWork|http://www.atworkonline.it/|info@atworkonline.it|Svilu
 Brescia|Travagliato|EasyTalk|http://www.easytalk.it/|info@easytalk.it|VoIP
 Cremona|Cremona|DigiColor|http://www.digicolor.net/|info@digicolor.net|Web
 Cremona|Cremona|Metarete|http://www.metarete.it/|info@metarete.it|Web,Sviluppo,Networking
+Lecco|Lecco|YetOpen|http://www.yetopen.it/||Networking
 Milano|Milano|Bee-Side|http://www.bee-side.com/||Web
 Milano|Milano|CBS|http://www.cecchi.biz/||Migrazione
 Milano|Rho|MMUL|http://www.mmul.it/|info@mmul.it|Networking,Formazione
@@ -12,4 +13,3 @@ Milano|Pero|PuntoContatto|http://www.puntocontatto.it/|info@puntocontatto.it|VoI
 Pavia|Pavia|Apsis|http://www.apsis.it/|info@apsis.it|Migrazione,Networking
 Pavia|Vigevano|MarcoSimioni|http://www.marcosimioni.com/|ms@marcosimioni.com|Embedded
 Varese|Buguggiate|Link It|http://linkgroup.it/|info@linkgroup.it|Sviluppo
-
