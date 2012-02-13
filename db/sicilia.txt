@@ -1,4 +1,3 @@
-Catania|Catania|Itesys|http://www.itesys.it/|info@itesys.it|Networking,VoIP
 Catania|Valverde|NCE|http://www.nce-ict.it/|info@nce-ict.it|Networking,VoIP
 Ragusa|Modica|Libobi|http://www.libobi.org/||Networking,VoIP
 
