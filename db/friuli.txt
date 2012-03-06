@@ -1,3 +1,4 @@
 Trieste|Trieste|Voiper|http://www.voiper.it/|info@spherait.it|VoIP
 Udine|Lignano Sabbiadoro|AngeloPellegrinon|http://www.angelopellegrinon.it/|info@angelopellegrinon.it|VoIP,Web,Networking
-
+Udine|Tavagnacco|Tecnoteca|http://www.tecnoteca.com/|tecnoteca@tecnoteca.com|Web
+Udine|Tavagnacco|Cogito|http://www.cogitoweb.it/|info@cogitoweb.it|Sviluppo
