@@ -1,6 +1,10 @@
 Arezzo|Arezzo|Antica Bottega Digitale|http://portal.abd.it/||Consulenza
 Firenze|Firenze|Truelite|http://www.truelite.it/|info@truelite.it|Networking,Formazione,Sviluppo
 Firenze|Campi Bisenzio|Niccolo Rigacci|http://www.rigacci.net/|niccolo@rigacci.org|Networking,Embedded
+Grosseto|Grosseto|Smart Media|http://www.smartmedia2000.it/|info@smartmedia2000.it|Networking
 Lucca|Lucca|Studio EnneEnne|http://www.enneenne.com/|info@enneenne.com|Embedded,Sviluppo,Web
+Massa|Massa|BNova|http://www.bnova.it/|info@bnova.it|Consulenza
 Pisa|Pisa|eLabor|http://www.elabor.biz/|info@elabor.biz|Networking,Sviluppo
+Pisa|Navacchio|Seacom|http://www.seacom.it/|info@seacom.it|Networking
+Pisa|Navacchio|Openia|http://www.openia.it/|info@openia.it|Consulenza
 Prato|Prato|CBS|http://www.cecchi.biz/||Networking

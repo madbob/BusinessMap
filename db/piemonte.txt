@@ -6,4 +6,5 @@ Torino|Torino|PowerVoip|http://www.powervoip.it/||VoIP
 Torino|Torino|NextStep|http://www.nextstep-tlc.com/|segreteria@nextstep-tlc.com|Networking
 Torino|Torino|Axant|http://www.axant.it/|info@axant.it|Web,Consulenza
 Torino|Torino|Lixper|http://www.lixper.it/|info@lixper.it|Networking
+Torino|Torino|Emerasoft|http://www.emerasoft.com/|info@emerasoft.com|Consulenza
 Torino|Moncalieri|Linuz|http://www.studiojnj.it/linuz/|info@linuz.it|Networking

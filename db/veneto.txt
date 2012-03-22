@@ -10,4 +10,4 @@ Verona|Grezzana|Netspin|http://www.netspin.it/||Networking,Web
 Vicenza|Vicenza|3Lances|http://www.3lances.it/|3lances@3lances.it|Sviluppo,Networking
 Vicenza|Vicenza|LiberoBit|http://www.liberobit.net/|info@liberobit.net|Networking
 Vicenza|Vicenza|Nemesi|http://www.nemesigroup.it/|info@nemesigroup.it|Sicurezza
-
+Vicenza|Vicenza|Open Solutions|http://www.opensourcesolutions.it/|info@opensourcesolutions.it|Web,Sviluppo

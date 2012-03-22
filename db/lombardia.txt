@@ -9,6 +9,7 @@ Milano|Milano|Bee-Side|http://www.bee-side.com/||Web
 Milano|Rho|MMUL|http://www.mmul.it/|info@mmul.it|Networking,Formazione
 Milano|Rho|Voice@Work|http://www.voiceatwork.com/||VoIP
 Milano|Pero|PuntoContatto|http://www.puntocontatto.it/|info@puntocontatto.it|VoIP
+Milano|Sesto San Giovanni|http://sourcesense.com/|info@sourcesense.com|Consulenza,Formazione
 Pavia|Pavia|Apsis|http://www.apsis.it/|info@apsis.it|Migrazione,Networking
 Pavia|Vigevano|MarcoSimioni|http://www.marcosimioni.com/|ms@marcosimioni.com|Embedded
 Varese|Buguggiate|Link It|http://linkgroup.it/|info@linkgroup.it|Sviluppo

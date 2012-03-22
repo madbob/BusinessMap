@@ -1,3 +1,4 @@
 Cagliari|Cagliari|FlossLab|http://www.flosslab.it/|info@flosslab.it|Web,Consulenza
 Cagliari|Cagliari|Akhela|http://www.akhela.com/|info@akhela.com|Sviluppo
+Cagliari|Cagliari|AgileTec|http://www.agiletec.it/|info@agiletec.it|Sviluppo
 Sassari|Sassari|Abinsula|http://www.abinsula.com/|info@abinsula.com|Embedded,Sviluppo
