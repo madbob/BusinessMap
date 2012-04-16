@@ -4,6 +4,7 @@ Bologna|Bologna|Yacme|http://www.yacme.com/|info@yacme.com|Formazione,Migrazione
 Bologna|Imola|Incipit|http://www.incipit.biz/|info@incipit.biz|Web,Networking
 Modena|Modena|Klarya|http://www.klarya.it/|info@klarya.it|VoIP
 Parma|Parma|Nuvole|http://nuvole.org/|info@nuvole.org|Networking
+Parma|Parma|CliccaLinca|http://www.cliccalinca.it/||Web
 Reggio Emilia|Reggio nell'Emilia|Omnis System|http://www.omnis-systems.com/|support@omnis-systems.com|Networking,Groupware
 Reggio Emilia|Correggio|Web-LAN|http://www.web-lan.it/|tecnico@web-lan.it|Networking,Formazione,Web
 Reggio Emilia|Scandiano|Garp|http://www.garp.it/|info@garp.it|Consulenza,VoIP,Web
