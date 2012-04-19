@@ -2,6 +2,7 @@ Bergamo|Dalmine|SMCP Techology|http://www.smcpsoftware.eu/|info@smcp.it|Web,Cons
 Bergamo|Rogno|Nixo|http://www.nixo.it/||Networking
 Brescia|Castegnato|AtWork|http://www.atworkonline.it/|info@atworkonline.it|Sviluppo,Migrazione
 Brescia|Travagliato|EasyTalk|http://www.easytalk.it/|info@easytalk.it|VoIP
+Brescia|Rezzato|Open One|http://www.open-one.it/|info@open-one.it|Consulenza
 Cremona|Cremona|DigiColor|http://www.digicolor.net/|info@digicolor.net|Web
 Cremona|Cremona|Metarete|http://www.metarete.it/|info@metarete.it|Web,Sviluppo,Networking
 Lecco|Lecco|YetOpen|http://www.yetopen.it/||Networking
