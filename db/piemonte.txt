@@ -8,3 +8,4 @@ Torino|Torino|Axant|http://www.axant.it/|info@axant.it|Web,Consulenza
 Torino|Torino|Lixper|http://www.lixper.it/|info@lixper.it|Networking
 Torino|Torino|Emerasoft|http://www.emerasoft.com/|info@emerasoft.com|Consulenza
 Torino|Moncalieri|Linuz|http://www.studiojnj.it/linuz/|info@linuz.it|Networking
+Torino|Villar Perosa|Virtual Bit|http://www.virtual-bit.com/|info@virtual-bit.com|Sviluppo,Consulenza
