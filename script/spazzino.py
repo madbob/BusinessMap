@@ -389,7 +389,7 @@ if __name__ == "__main__":
 					  )
 		try:
 			mail = notifiche.email(mittente	= 'BusinessMap <businessmap@gelma.net>',
-							   destinatario	= ['Bob <bob4job@gmail.com>'],
+							   destinatario	= ['Paolo Foletto <paolo.foletto@gmail.com>','businessmap@gelma.net'],
 							   oggetto 		= 'BusinessMap: report data (UTC) '+str(datetime.datetime.utcnow()),
 							   testo		= report,
 							   invia_subito	= True) # Se da Aggiornare, vedi Guida Intergalattica alla LugMap §4.1
