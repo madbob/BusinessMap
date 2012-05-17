@@ -179,13 +179,13 @@ class LUG(persistent.Persistent):
 		if inspect.stack()[1][3] != 'aggiorna_campi': # controllo la funzione che mi invoca. Non considero l'aggiornamento dei campi come un errore
 				self.numero_errori += 1
 		self.notifiche.append(testo)
-		logga('Lug <'+self.id+'>:',testo)
+		logga('BusinessMap <'+self.id+'>:',testo)
 		self.aggiorna_dati()
 
 	def controllo_dns(self):
 		"""Controllo l'esistenza e la mappatura del dominio"""
 
-		logga('Lug <'+self.id+'>: controllo DNS per '+self.dominio)
+		logga('BusinessMap <'+self.id+'>: controllo DNS per '+self.dominio)
 		try:
 			self._v_DNS_attuali = set([str(x) for x in dns.resolver.query(self.dominio, tcp=True)])
 		except:
@@ -214,7 +214,7 @@ class LUG(persistent.Persistent):
 	def controllo_homepage(self):
 		"""Leggo lo URL e faccio una valutazione numerica. True/False di ritorno."""
 
-		logga('Lug <'+self.id+'>: controllo web per '+self.url)
+		logga('BusinessMap <'+self.id+'>: controllo web per '+self.url)
 
 		self._v_logger = logging.getLogger("mechanize.http_redirects") # attivo il log dei redirect
 		self._v_redirect_log = log_per_mechanize() # istanzio l'oggetto per i log
@@ -269,7 +269,7 @@ class LUG(persistent.Persistent):
 			try: # estrapolo il titolo della pagina nella maniera usuale
 				self._v_titolo_attuale = self._v_browser.title().encode('utf-8')
 			except: # se non ho un title, mollo
-				logga('Lug <'+self.id+'>: nessuno title homepage')
+				logga('BusinessMap <'+self.id+'>: nessuno title homepage')
 				return True
 
 		try:
@@ -290,7 +290,7 @@ class LUG(persistent.Persistent):
 				url = riga.split()[-1] # prendo l'URL completo
 				dominio_nel_log = urlparse.urlparse(url).netloc
 				if self.dominio != dominio_nel_log:
-					logga('Lug <'+self.id+'>: controllo redirect per '+self.dominio)
+					logga('BusinessMap <'+self.id+'>: controllo redirect per '+self.dominio)
 					self.notifica("Dominio cambiato da <"+self.dominio+"> a <"+dominio_nel_log+">")
 		return True
 
