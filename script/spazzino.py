@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-"""Per ogni Lug indicato nella LugMap effettuo un insieme di controlli di validità.
+"""Per ogni voce della BusinessMap effettuo un insieme di controlli di validità.
    Se qualcosa non torna, avverto chi di dovere.
    Nota: il codice è complicato e tortuoso. Ma è stato l'unico modo per risolvere
    problemi di thread appesi, procedure bloccate, ecc. Qualsiasi modifica/miglioria
@@ -78,7 +78,7 @@ logga('avviato')
 try: # attiva DB
 	from ZODB.FileStorage import FileStorage
 	from ZODB.DB import DB
-	storage = FileStorage(os.path.join(os.environ["HOME"], '.spazzino.db'))
+	storage = FileStorage(os.path.join(os.environ["HOME"], '.businessmap.db'))
 	db = DB(storage)
 	connection = db.open()
 	zodb = connection.root()
@@ -93,24 +93,24 @@ if True: # variabili globali
 	ritardo_lancio_thread        = 5 # secondi tra un thread e l'altro
 	path_coda                    = '/tmp/' # posizione dei file temporanei di coda
 	report                       = [] # linee del report finale
-	pidfile                      = '/tmp/.spazzino.pid' # controllo istanze attive
+	pidfile                      = '/tmp/.businessmap.pid' # controllo istanze attive
 	orario_partenza              = time.time()
 	socket.setdefaulttimeout(tempo_minimo_per_i_controlli / 2) # Timeout in secondi del fetching delle pagine (onorato da urllib2, a sua volta usato da Mechanize)
 
 if True: # controllo istanze attive
 	if os.path.isfile(pidfile):
 		if os.path.isdir('/proc/' + str(file(pidfile,'r').read())):
-			logga('Spazzino: forse un\'altra istanza attiva. Eventualmente cancella '+pidfile)
-			sys.exit('Spazzino: forse un\'altra istanza attiva. Eventualmente cancella '+pidfile)
+			logga('BusinessMap: forse un\'altra istanza attiva. Eventualmente cancella '+pidfile)
+			sys.exit('BusinessMap: forse un\'altra istanza attiva. Eventualmente cancella '+pidfile)
 		else:
-			logga("Spazzino: rimosso "+pidfile)
+			logga("BusinessMap: rimosso "+pidfile)
 	file(pidfile,'w').write(str(os.getpid()))
 
 def termina_thread_appesi():
 	"""Uccido tutti i thread ancora attivi"""
 
 	for id in multiprocessing.active_children():
-		logga('Lug: <'+id.name+'> ucciso thread')
+		logga('BusinessMap: <'+id.name+'> ucciso thread')
 		id.terminate()
 
 class log_per_mechanize:
@@ -136,7 +136,7 @@ class LUG(persistent.Persistent):
 		self.url = None
 		self.contatto = None
 
-		self.dominio = None # informazioni specifiche per ogni Lug
+		self.dominio = None # informazioni specifiche per ogni voce
 		self.notifiche = [] # non puoi dichiararla volatile. Il pickling non la porterebbe nella coda_risultati
 		self.web_errore_segnalato = False # controllo segnalazioni ripetute
 		self.dns_errore_segnalato = False # controllo segnalazioni ripetute
@@ -225,7 +225,7 @@ class LUG(persistent.Persistent):
 		self._v_browser = mechanize.Browser() # volatile per zodb
 		self._v_browser.set_handle_robots(False) # evitiamo di richiedere robots.txt ogni volta
 		self._v_browser.set_debug_redirects(True) # obbligo mechanize a tenere traccia dei redirect
-		self._v_browser.addheaders = [('User-agent', 'Bot: http://lugmap.linux.it - lugmap@linux.it')]
+		self._v_browser.addheaders = [('User-agent', 'Bot: http://www.businessmap.it - info@businessmap.it')]
 
 		try:
 			if self.id == 'Blug':
@@ -270,7 +270,7 @@ class LUG(persistent.Persistent):
 		if valore_magico <= 0.5:
 			self.notifica('Atten.: differenze contenuto homepage ('+str(valore_magico)+')')
 		else:
-			logga('Lug <'+self.id+'>: valore_magico a', valore_magico)
+			logga('BusinessMap <'+self.id+'>: valore_magico a', valore_magico)
 
 		if self.web_errore_segnalato is not False:
 			self.notifica("Precedente errore WEB del " + time.strftime('%d/%m/%y', time.gmtime(self.web_errore_segnalato)) + ' risolto')
@@ -284,7 +284,7 @@ class LUG(persistent.Persistent):
 		if self.id == "CSLug": # Saltiamo questo Lug perché ha il title che si comporta in modo buffo.
 			return True # Appare, solo a volte, un "- Home" finale nel title, e questo genera false segnalazioni
 
-		logga('Lug <'+self.id+'>: controllo title per '+self.url)
+		logga('BusinessMap <'+self.id+'>: controllo title per '+self.url)
 
 		if not hasattr(self, '_v_titolo_attuale'): # se non è stato gia' settato dall'eccezione Blug (vedi sopra)
 			try: # estrapolo il titolo della pagina nella maniera usuale
@@ -303,7 +303,7 @@ class LUG(persistent.Persistent):
 	def controllo_redirect(self):
 		"""Scandaglio il log generato da Mechanize per trovare cambiamenti di dominio"""
 
-		logga('Lug <'+self.id+'>: controllo redirect per '+self.dominio)
+		logga('BusinessMap <'+self.id+'>: controllo redirect per '+self.dominio)
 
 		if self._v_redirect_log.righe: # se ho dei redirect
 			riga = self._v_redirect_log.righe[-1]
@@ -319,14 +319,14 @@ class LUG(persistent.Persistent):
 		self.ultimo_aggiornamento = time.time()
 
 		try:
-			fd, fname = tempfile.mkstemp(suffix='.spazzino', dir=path_coda)
+			fd, fname = tempfile.mkstemp(suffix='.businessmap', dir=path_coda)
 			file_pk = os.fdopen(fd, "w")
 			pickle.dump(self, file_pk, 0)
 		except:
-			logga('Lug <'+self.id+'>: errore salvataggio pickling ' + fname)
+			logga('BusinessMap <'+self.id+'>: errore salvataggio pickling ' + fname)
 
 	def controlli(self):
-		logga('Lug <'+self.id+'>: inizio controlli')
+		logga('BusinessMap <'+self.id+'>: inizio controlli')
 		self.numero_controlli += 1
 		if self.controllo_dns():
 			if self.controllo_homepage():
@@ -334,7 +334,7 @@ class LUG(persistent.Persistent):
 				self.controllo_title()
 		self.controlli_conclusi = True
 		self.aggiorna_dati()
-		logga('Lug <'+self.id+'>: fine controlli')
+		logga('BusinessMap <'+self.id+'>: fine controlli')
 
 if __name__ == "__main__":
 	atexit.register(termina_thread_appesi)
@@ -368,7 +368,7 @@ if __name__ == "__main__":
 		j.join(tempo_minimo_per_i_controlli)
 
 	logga('inizio commit dei risultati in zodb')
-	for filepk in sorted( glob.glob( os.path.join(path_coda, '*.spazzino') ) ):
+	for filepk in sorted( glob.glob( os.path.join(path_coda, '*.businessmap') ) ):
 		try:
 			lug_risultati = pickle.load(open(filepk,'r'))
 		except:
@@ -377,23 +377,23 @@ if __name__ == "__main__":
 
 		if zodb[lug_risultati.id].ultimo_aggiornamento <= lug_risultati.ultimo_aggiornamento:
 			zodb[lug_risultati.id] = lug_risultati
-			logga('Lug: <'+lug_risultati.id+'> commit dei dati')
+			logga('BusinessMap: <'+lug_risultati.id+'> commit dei dati')
 		else:
-			logga('Lug: <'+lug_risultati.id+'> file pickle '+filepk+' vecchio. Scartato')
+			logga('BusinessMap: <'+lug_risultati.id+'> file pickle '+filepk+' vecchio. Scartato')
 		os.remove(filepk)
 
 	logga('fine commit dei risultati in zodb')
 
 	for id in sorted(zodb.keys()): # report dei thread che non hanno concluso
 		if zodb[id].controlli_conclusi is False:
-			logga('Lug: <'+zodb[id].id+'> non ha concluso il ciclo di controlli')
+			logga('BusinessMap: <'+zodb[id].id+'> non ha concluso il ciclo di controlli')
 			report.append('Atten. <'+zodb[id].id+'> non ha concluso il ciclo di controlli')
 
 	logga('inizio invio notifiche')
 	for id in sorted(zodb.keys()):
 		if zodb[id].notifiche:
-			logga('Lug <'+id+'> invio notifiche')
-			report.append('\n- - ----> Lug: '+zodb[id].id+' ('+str(zodb[id].numero_errori)+'/'+str(zodb[id].numero_controlli)+') <---- - -\n')
+			logga('BusinessMap <'+id+'> invio notifiche')
+			report.append('\n- - ----> BusinessMap: '+zodb[id].id+' ('+str(zodb[id].numero_errori)+'/'+str(zodb[id].numero_controlli)+') <---- - -\n')
 			for rigo in zodb[id].notifiche: report.append(rigo)
 			report.append('\n        * Dati DB *')
 			report.append('Url : ' + zodb[id].url + '   Email: '+zodb[id].contatto)
@@ -401,7 +401,7 @@ if __name__ == "__main__":
 	logga('fine invio notifiche')
 
 	if report:
-		report.insert(0, 'Spazzino: report del ' +
+		report.insert(0, 'BusinessMap: report del ' +
 					  time.strftime('%d/%m/%y', time.gmtime(orario_partenza)) +
 					  ' dalle ' +
 					  time.strftime('%H:%M', time.gmtime(orario_partenza)) +
@@ -409,7 +409,7 @@ if __name__ == "__main__":
 					  time.strftime('%H:%M', time.gmtime(time.time()))
 					  )
 		try:
-			mail = notifiche.email(mittente	= 'Spazzino <spazzino@gelma.net>',
+			mail = notifiche.email(mittente	= 'BusinessMap <businessmap@gelma.net>',
 							   destinatario	= ['Bob <bob4job@gmail.com>'],
 							   oggetto 		= 'BusinessMap: report data (UTC) '+str(datetime.datetime.utcnow()),
 							   testo		= report,
