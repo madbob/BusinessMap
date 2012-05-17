@@ -387,14 +387,12 @@ if __name__ == "__main__":
 					  ' alle ' +
 					  time.strftime('%H:%M', time.gmtime(time.time()))
 					  )
-		try:
-			mail = notifiche.email(mittente	= 'BusinessMap <businessmap@gelma.net>',
-							   destinatario	= ['Paolo Foletto <paolo.foletto@gmail.com>','businessmap@gelma.net'],
-							   oggetto 		= 'BusinessMap: report data (UTC) '+str(datetime.datetime.utcnow()),
-							   testo		= report,
-							   invia_subito	= True) # Se da Aggiornare, vedi Guida Intergalattica alla LugMap §4.1
-		except: # se fallisco stampo a video, così mi arriva come mail via cron
-			print '\n'.join(report)
+
+		mail = notifiche.email(mittente	= 'BusinessMap <businessmap@gelma.net>',
+					destinatario	= ['Paolo Foletto <paolo.foletto@gmail.com>','businessmap@gelma.net'],
+					oggetto 		= 'BusinessMap: report data (UTC) '+str(datetime.datetime.utcnow()),
+					testo		= report,
+					invia_subito	= True)
 
 transaction.commit()
 db.pack()
