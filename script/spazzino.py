@@ -228,26 +228,8 @@ class LUG(persistent.Persistent):
 		self._v_browser.addheaders = [('User-agent', 'Bot: http://www.businessmap.it - info@businessmap.it')]
 
 		try:
-			if self.id == 'Blug':
-				# Questo terribile hack/eccezione si è reso necessario perché Mechanize
-				# resta appesa nel tentativo di connessione al sito del Blug.
-				# Mechanize è l'unico package del genere che segue automaticamente anche
-				# i refresh nei tag (roba non standard, ma pesantemente usata da quasi tutti
-				# i wiki. -- Il problema è gia' stato segnalato all'autore.)
-
-				self._v_richiesta = urllib2.Request(self.url,None, {"User-Agent":"Bot: http://lugmap.linux.it - lugmap@linux.it"})
-				self._v_pagina_html = urllib2.urlopen(self._v_richiesta).read()
-				self._v_Termini_Attuali = set(self._v_pagina_html.split())
-
-				# estraiamo subito anche il title
-				try:
-					self._v_soup = BeautifulSoup.BeautifulSoup(self._v_pagina_html)
-					self._v_titolo_attuale = self._v_soup.html.head.title.string.strip()
-				except: # se non ho un title, lo setto vuoto
-					self._v_titolo_attuale = ''
-			else:
-				self._v_Termini_Attuali = set(self._v_browser.open(self.url).read().split())
-				self._v_log_handler.flush() # forzo il flush del log dei redirect
+			self._v_Termini_Attuali = set(self._v_browser.open(self.url).read().split())
+			self._v_log_handler.flush() # forzo il flush del log dei redirect
 		except:
 			self.notifica('Errore web: impossibile leggere homepage')
 
@@ -280,9 +262,6 @@ class LUG(persistent.Persistent):
 
 	def controllo_title(self):
 		"""Leggo il title della pagina e controllo che non sia cambiato. True/False di ritorno"""
-
-		if self.id == "CSLug": # Saltiamo questo Lug perché ha il title che si comporta in modo buffo.
-			return True # Appare, solo a volte, un "- Home" finale nel title, e questo genera false segnalazioni
 
 		logga('BusinessMap <'+self.id+'>: controllo title per '+self.url)
 
