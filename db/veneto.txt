@@ -5,6 +5,8 @@ Padova|Casale di Scodosia|Fabio Lovato|http://www.l-web.it/||Web,Sviluppo
 Treviso|Farra di Soligo|Creasol|http://www.creasol.it/|tech@creasol.it|VoIP,Consulenza
 Treviso|Montebelluna|Xuni|http://www.xuni.it/||Migrazione,Sviluppo,Formazione
 Venezia|San Donà di Piave|Dacos|http://www.dacos.net/|tech@dacos.net|Consulenza
+Venezia|Jesolo|Mediacy|http://www.mediacy.it/|info@mediacy.it|Web
+Venezia|Cavallino-Treporti|OmniaSolutions|http://www.omniasolutions.eu/||Web
 Verona|Verona|Alba|http://www.alba.st/|info@alba.st|Networking
 Verona|Villafranca di Verona|Kleis|http://www.kleis.it/|info@kleis.it|VoIP
 Verona|Grezzana|Netspin|http://www.netspin.it/||Networking,Web
