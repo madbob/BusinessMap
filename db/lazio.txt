@@ -8,4 +8,5 @@ Roma|Roma|PlugAndVoip|http://www.plugandvoip.it/|info@plugandvoip.it|VoIP
 Roma|Roma|Eraclito|http://www.eraclito.it/|info@eraclito.it|Formazione
 Roma|Roma|Wedjaa|http://www.wedjaa.net/|info@wedjaa.net|Sicurezza,Consulenza
 Roma|Roma|Lynx|http://w2.lynxlab.com/|info@lynxlab.com|Web,Formazione
+Roma|Roma|New Genesys|http://www.newgenesys.it/|info@newgenesys.it|Sviluppo
 Viterbo|Viterbo|Air Security Solutions|http://www.air-securitysolutions.com/||Sicurezza
