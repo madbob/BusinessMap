@@ -41,7 +41,7 @@ do_head ("Cos'è BusinessMap");
 		<p>
 			Puoi segnalare la tua azienda, o imprese Linux-friendly
 			che conosci, mandando una mail a
-			<a href="mailto:info@businessmap.it">info@businessmap.it</a>.
+			<a href="mailto:bob@linux.it">bob@linux.it</a>.
 		</p>
 
 		<p>

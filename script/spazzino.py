@@ -225,7 +225,7 @@ class LUG(persistent.Persistent):
 		self._v_browser = mechanize.Browser() # volatile per zodb
 		self._v_browser.set_handle_robots(False) # evitiamo di richiedere robots.txt ogni volta
 		self._v_browser.set_debug_redirects(True) # obbligo mechanize a tenere traccia dei redirect
-		self._v_browser.addheaders = [('User-agent', 'Bot: http://www.businessmap.it - info@businessmap.it')]
+		self._v_browser.addheaders = [('User-agent', 'Bot: http://www.businessmap.it - bob@linux.it')]
 
 		try:
 			self._v_Termini_Attuali = set(self._v_browser.open(self.url).read().split())
