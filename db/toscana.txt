@@ -1,5 +1,6 @@
 Arezzo|Arezzo|Antica Bottega Digitale|http://portal.abd.it/||Consulenza
 Firenze|Firenze|Truelite|http://www.truelite.it/|info@truelite.it|Networking,Formazione,Sviluppo
+Firenze|Firenze|123informatica|http://www.123informatica.it/|info@123informatica.it|Networking,Formazione,Web
 Firenze|Campi Bisenzio|Niccolo Rigacci|http://www.rigacci.net/|niccolo@rigacci.org|Networking,Embedded
 Grosseto|Grosseto|Smart Media|http://www.smartmedia2000.it/|info@smartmedia2000.it|Networking
 Lucca|Lucca|Studio EnneEnne|http://www.enneenne.com/|info@enneenne.com|Embedded,Sviluppo,Web
