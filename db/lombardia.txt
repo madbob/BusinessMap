@@ -9,6 +9,7 @@ Lecco|Lecco|YetOpen|http://www.yetopen.it/||Networking
 Milano|Milano|Bee-Side|http://www.bee-side.com/||Web
 Milano|Rho|MMUL|http://www.mmul.it/|info@mmul.it|Networking,Formazione
 Milano|Rho|Voice@Work|http://www.voiceatwork.com/||VoIP
+Milano|Legnano|Link It|http://www.cityplanner.it/|lima.cityplanner@gmail.com|Consulenza
 Milano|Pero|PuntoContatto|http://www.puntocontatto.it/|info@puntocontatto.it|VoIP
 Milano|Sesto San Giovanni|SourceSense|http://sourcesense.com/|info@sourcesense.com|Consulenza,Formazione
 Pavia|Pavia|Apsis|http://www.apsis.it/|info@apsis.it|Migrazione,Networking
