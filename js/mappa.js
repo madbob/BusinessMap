@@ -68,14 +68,14 @@ function init () {
 
 	layers = [ 'networking', 'sviluppo', 'web', 'formazione', 'consulenza' ];
 
-	for (i = 0; i < layers.length; i++) {
+	for (var i = 0; i < layers.length; i++) {
 		n = layers [i];
 		var f = $('input[type=hidden][name=' + n + '_coords_file]').val ();
 		var newl = new OpenLayers.Layer.Text( n, {location: f} );
 		map.addLayer(newl);
 	}
 
-	zoom = $('input[name=default_zoom]').val ();;
+	zoom = $('input[name=default_zoom]').val ();
 
 	if ($('input[name=zooming_lat]').length != 0) {
 		lat = $('input[name=zooming_lat]').val ();
@@ -91,25 +91,15 @@ function init () {
 	map.setCenter(ll, zoom);
 
 	$('.filters input[type=radio]').click (function () {
-		if ($(this).val () == 'tutti') {
-			for (i = 0; i < map.layers.length; i++) {
-				l = map.layers [i];
-				l.setVisibility (true);
-			}
-		}
-		else {
-			/*
-				Parto da 1 perche' il layer 0 e' quello con la
-				mappa vera e propria disegnata
-			*/
-			for (i = 1; i < map.layers.length; i++) {
-				l = map.layers [i];
+		var value = $(this).val();
+		var show_all = value == 'tutti';
 
-				if (l.name != $(this).val ())
-					l.setVisibility (false);
-				else
-					l.setVisibility (true);
-			}
+		// Parto da 1 perche' il layer 0 e' quello con la
+		// mappa vera e propria disegnata
+		for (var i = 1; i < map.layers.length; i++) {
+			l = map.layers [i];
+			var show = show_all || l.name == value;
+			l.setVisibility(show);
 		}
 	});
 }
